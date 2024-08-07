@@ -1,0 +1,13 @@
+.header-bar{
+  width: 100%;
+  overflow: hidden;
+  height: 48px;
+  background: white;
+  box-shadow: 0 5px 10px 1px #0041a51f;
+  z-index: 20 !important;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding: 0 36px;
+  align-items: center;
+}

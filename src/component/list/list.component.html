@@ -1,0 +1,100 @@
+<div class="list-container">
+
+  <div class="list-content">
+    <span class="title"> Demo Form</span>
+    <div class="divider"></div>
+    <div class="form">
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Header:
+        </span>
+        <input class="form-item-input" />
+      </div>
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Sub Header:
+        </span>
+        <input class="form-item-input" />
+      </div>
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Notification Type:
+        </span>
+        <div class="form-item-radio-group">
+          <nz-radio-group>
+            <label nz-radio nzValue="A">Data Change</label>
+            <label nz-radio nzValue="B">Release Notes</label>
+
+          </nz-radio-group>
+
+        </div>
+
+      </div>
+
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Application:
+        </span>
+        <div class="form-item-checkbox-group">
+          <label nz-checkbox>Notification Web</label>
+          <label nz-checkbox>Portal</label>
+
+        </div>
+      </div>
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Release Date:
+        </span>
+        <nz-date-picker class="form-item-input"></nz-date-picker>
+      </div>
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Is UAT Applicable:
+        </span>
+        <nz-select>
+          <nz-option nzValue="Yes" nzLabel="Yes"></nz-option>
+          <nz-option nzValue="No" nzLabel="No"></nz-option>
+        </nz-select>
+      </div>
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Summary:
+        </span>
+        <textarea class="form-item-textarea" placeholder="Summary"></textarea>
+      </div>
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Impact:
+        </span>
+        <textarea class="form-item-textarea" placeholder="Impact"></textarea>
+      </div>
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Change:
+        </span>
+        <textarea class="form-item-textarea" placeholder="Change"></textarea>
+      </div>
+      <div class="form-item">
+        <span class="form-item-label">
+          <span class="required">*</span>
+          Notes:
+        </span>
+        <textarea class="form-item-textarea" placeholder="Notes"></textarea>
+      </div>
+    </div>
+    <div class="form-operator">
+      <button nz-button nzType="default" style="margin-right: 16px;">Reset</button>
+      <button nz-button nzType="primary">Save</button>
+    </div>
+  </div>
+
+</div>

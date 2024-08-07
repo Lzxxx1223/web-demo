@@ -1,0 +1,11 @@
+.footer-bar{
+  width: 100%;
+  overflow: hidden;
+  height: 48px;
+  background: white;
+  border-top: 1px solid #f3f3f3;
+  display: flex;
+  color: black;
+  padding: 0 36px;
+  align-items: center;
+}
