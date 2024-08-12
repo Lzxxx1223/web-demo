@@ -8,10 +8,11 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: flex;
+  display: block;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: flex-start;
+  align-content: flex-start; */
 
 }
 .list-content{
