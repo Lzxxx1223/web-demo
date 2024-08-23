@@ -9,11 +9,6 @@
   height: calc(100% - 100px);
   overflow: auto;
   display: block;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start; */
-
 }
 .list-content{
   height: 100%;
