@@ -5,28 +5,78 @@
     <div class="divider"></div>
     <div class="form">
       <div class="form-item">
-        <span class="form-item-label">
+        <label class="form-item-label">
           <span class="required">*</span>
           Header:
-        </span>
+        </label>
         <input class="form-item-input" />
       </div>
       <div class="form-item">
-        <span class="form-item-label">
+        <label class="form-item-label">
           <span class="required">*</span>
           Sub Header:
-        </span>
+        </label>
         <input class="form-item-input" />
       </div>
       <div class="form-item">
-        <span class="form-item-label">
+        <label class="form-item-label">
           <span class="required">*</span>
           Notification Type:
-        </span>
+        </label>
         <div class="form-item-radio-group">
           <nz-radio-group>
             <label nz-radio nzValue="A">Data Change</label>
             <label nz-radio nzValue="B">Release Notes</label>
+          </nz-radio-group>
+        </div>
+      </div>
+      <div class="form-item">
+        <label class="form-item-label">
+          <span class="required">*</span>
+          Application:
+        </label>
+        <div class="form-item-checkbox-group">
+          <label nz-checkbox>Notification Web</label>
+          <label nz-checkbox>Portal</label>
+        </div>
+      </div>
+      <div class="form-item">
+        <label class="form-item-label">
+          <span class="required">*</span>
+          Release Date:
+        </label>
+        <nz-date-picker class="form-item-input"></nz-date-picker>
+      </div>
+      <div class="form-item">
+        <label class="form-item-label">
+          <span class="required">*</span>
+          Is UAT Applicable:
+        </label>
+        <nz-select>
+          <nz-option nzValue="Yes" nzLabel="Yes"></nz-option>
+          <nz-option nzValue="No" nzLabel="No"></nz-option>
+        </nz-select>
+      </div>
+      <div class="form-item">
+        <label class="form-item-label">
+          <span class="required">*</span>
+          Summary:
+        </label>
+        <textarea class="form-item-textarea" placeholder="Summary"></textarea>
+      </div>
+      <div class="form-item">
+        <label class="form-item-label">
+          <span class="required">*</span>
+          Impact:
+        </label>
+        <textarea class="form-item-textarea" placeholder="Impact"></textarea>
+      </div>
+      <div class="form-item">
+        <label class="form-item-label">
+          <span class="required">*</span>
+          Change:
+        </label>
+        <textarea class="form-item-textarea" placeholder="Change"></textarea>
 
           </nz-radio-group>
 
