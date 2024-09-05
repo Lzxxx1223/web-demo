@@ -6,9 +6,9 @@
 
 }
 .form{
-  height: calc(100% - 100px);
-  overflow: auto;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .list-content{
   height: 100%;
@@ -30,10 +30,9 @@
 }
 .form-item{
   display: flex;
-  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 5px;
   font-size: 12px;
-  align-items: center;
-  justify-content: center;
 }
 .form-item-label{
   width: 150px;
@@ -43,9 +42,8 @@
   justify-content: center;
 }
 .form-item-input{
-  margin: 0;
-  width: 300px;
-  margin-right: 20px;
+  width: 100%;
+  max-width: 300px;
   padding: 4px 11px;
   color: #555;
   font-size: 12px;
@@ -56,9 +54,8 @@
   border-radius: 4px;
 }
 .form-item-radio-group{
-  margin: 0;
-  width: 300px;
-  margin-right: 20px;
+  width: 100%;
+  max-width: 300px;
   padding: 4px 11px;
   color: #555;
   font-size: 12px;
@@ -73,9 +70,8 @@
   color: #555;
 }
 .form-item-checkbox-group{
-  margin: 0;
-  width: 300px;
-  margin-right: 20px;
+  width: 100%;
+  max-width: 300px;
   padding: 4px 11px;
   color: #555;
   font-size: 12px;
@@ -94,9 +90,8 @@
   align-items: center;
 }
 .form-item-textarea{
-  margin: 0;
-  width: 300px;
-  margin-right: 20px;
+  width: 100%;
+  max-width: 300px;
   height: 100px;
   padding: 4px 11px;
   color: #555;
