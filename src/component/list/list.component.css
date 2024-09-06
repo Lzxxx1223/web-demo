@@ -33,9 +33,15 @@
   margin-bottom: 10px;
   font-size: 12px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Align items to the start */
+  width: 48%; /* Adjust width to fit two items in one row */
 }
 .form-item-label{
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
   width: 150px;
 }
 .form-operator{
