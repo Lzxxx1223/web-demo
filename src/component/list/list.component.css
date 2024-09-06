@@ -6,6 +6,9 @@
 
 }
 .form{
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 16px; /* Add space between items */
   height: calc(100% - 100px);
   overflow: auto;
   display: block;
@@ -31,8 +34,11 @@
 .form-item{
   display: flex;
   margin-bottom: 10px;
+  justify-content: flex-start; /* Align items to the start */
+  flex: 1 1 300px; /* Allow items to grow and shrink, with a base width of 300px */
   font-size: 12px;
   align-items: center;
+  width: auto; /* Allow label width to adjust */
   justify-content: center;
 }
 .form-item-label{
@@ -42,6 +48,8 @@
   display: flex;
   justify-content: center;
 }
+  flex: 1; /* Allow inputs to take up remaining space */
+  width: auto; /* Remove fixed width */
 .form-item-input{
   margin: 0;
   width: 300px;
@@ -57,7 +65,8 @@
 }
 .form-item-radio-group{
   margin: 0;
-  width: 300px;
+  flex: 1; /* Allow inputs to take up remaining space */
+  width: auto; /* Remove fixed width */
   margin-right: 20px;
   padding: 4px 11px;
   color: #555;
@@ -74,7 +83,8 @@
 }
 .form-item-checkbox-group{
   margin: 0;
-  width: 300px;
+  flex: 1; /* Allow inputs to take up remaining space */
+  width: auto; /* Remove fixed width */
   margin-right: 20px;
   padding: 4px 11px;
   color: #555;
@@ -96,6 +106,8 @@
 .form-item-textarea{
   margin: 0;
   width: 300px;
+  flex: 1; /* Allow inputs to take up remaining space */
+  width: auto; /* Remove fixed width */
   margin-right: 20px;
   height: 100px;
   padding: 4px 11px;
