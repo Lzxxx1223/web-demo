@@ -8,7 +8,8 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .list-content{
   height: 100%;
@@ -33,7 +34,10 @@
   margin-bottom: 10px;
   font-size: 12px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 50%; /* Each form item will take up 50% of the row */
+  box-sizing: border-box;
+  padding: 8px; /* Add some padding for better spacing */
 }
 .form-item-label{
   width: 150px;
