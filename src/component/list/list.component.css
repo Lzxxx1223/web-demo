@@ -7,7 +7,7 @@
 }
 .form{
   height: calc(100% - 100px);
-  overflow: auto;
+  overflow: auto; /* Keep the overflow property */
   display: block;
 }
 .list-content{
@@ -30,18 +30,21 @@
 }
 .form-item{
   display: flex;
+  flex-direction: column; /* Change to column for individual item layout */
   margin-bottom: 10px;
   font-size: 12px;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+  width: calc(50% - 10px); /* Adjust width to fit two items in one row */
 }
 .form-item-label{
-  width: 150px;
+  width: auto; /* Adjust width to auto */
+  margin-bottom: 5px; /* Add margin for spacing */
 }
 .form-operator{
   display: flex;
   justify-content: center;
 }
+  width: 100%; /* Make input elements take full width of their container */
 .form-item-input{
   margin: 0;
   width: 300px;
