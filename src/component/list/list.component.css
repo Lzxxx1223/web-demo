@@ -8,7 +8,15 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
 }
 .list-content{
   height: 100%;
@@ -31,7 +39,7 @@
 .form-item{
   display: flex;
   margin-bottom: 10px;
-  font-size: 12px;
+  width: 48%;
   align-items: center;
   justify-content: center;
 }
