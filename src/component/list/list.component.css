@@ -37,9 +37,6 @@
 .form-item{
   display: flex;
   margin-bottom: 10px;
-  width: 48%;
-  margin-right: 2%;
-  box-sizing: border-box;
   font-size: 12px;
   align-items: center;
   justify-content: center;
@@ -132,11 +129,6 @@
 
 @media (max-width: 768px) {
   .form-item {
-  .form-item {
-    width: 100%;
-    margin-right: 0;
-  }
-
     flex-direction: column;
     align-items: flex-start;
   }
@@ -154,11 +146,6 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .form-item {
-  .form-item {
-    width: 48%;
-    margin-right: 2%;
-  }
-
     flex-direction: row;
     align-items: center;
   }
@@ -166,8 +153,4 @@
     width: 100%;
     max-width: 400px;
   }
-}
-
-.form-item:nth-child(2n) {
-  margin-right: 0;
 }
