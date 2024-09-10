@@ -7,6 +7,8 @@
 }
 .form{
   height: calc(100% - 100px);
+  display: flex; /* Allow items to be displayed in a flex container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   overflow: auto;
   display: block;
 }
@@ -36,7 +38,22 @@
   justify-content: center;
 }
 .form-item-label{
+.form-item {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: flex-start; /* Changed from center to flex-start */
+  width: 48%; /* Adjust width to fit two items in one row */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
   width: 150px;
+.form-item:nth-child(odd) {
+  margin-right: 4%; /* Add margin to the right for odd items */
+}
+}
+.form-item:nth-child(even) {
+  margin-left: 4%; /* Add margin to the left for even items */
 }
 .form-operator{
   display: flex;
