@@ -8,7 +8,8 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .list-content{
   height: 100%;
@@ -33,7 +34,10 @@
   margin-bottom: 10px;
   font-size: 12px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 50%; /* Each form item takes up half the width */
+  box-sizing: border-box;
+  padding: 8px;
 }
 .form-item-label{
   width: 150px;
@@ -44,7 +48,7 @@
 }
 .form-item-input{
   margin: 0;
-  width: 300px;
+  width: calc(100% - 170px); /* Adjust width to fit within the form item */
   margin-right: 20px;
   padding: 4px 11px;
   color: #555;
@@ -57,7 +61,7 @@
 }
 .form-item-radio-group{
   margin: 0;
-  width: 300px;
+  width: calc(100% - 170px); /* Adjust width to fit within the form item */
   margin-right: 20px;
   padding: 4px 11px;
   color: #555;
@@ -74,7 +78,7 @@
 }
 .form-item-checkbox-group{
   margin: 0;
-  width: 300px;
+  width: calc(100% - 170px); /* Adjust width to fit within the form item */
   margin-right: 20px;
   padding: 4px 11px;
   color: #555;
@@ -95,7 +99,7 @@
 }
 .form-item-textarea{
   margin: 0;
-  width: 300px;
+  width: calc(100% - 170px); /* Adjust width to fit within the form item */
   margin-right: 20px;
   height: 100px;
   padding: 4px 11px;
