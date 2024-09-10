@@ -107,3 +107,8 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.abc-abc{
+  display: flex;
+  align-items: center;
+}
