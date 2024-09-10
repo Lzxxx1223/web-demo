@@ -8,5 +8,9 @@ import { Component, EventEmitter, Input, Output, ViewEncapsulation } from "@angu
 })
 export class ListComponent{
   
+  // Add a property to store the notes value if needed
+  notes: string = '';
+
+  // Update any methods to handle the notes value if necessary
 
 }
