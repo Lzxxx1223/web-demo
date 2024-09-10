@@ -36,9 +36,16 @@
 
 .form-item{
   display: flex;
+  width: 100%;
   margin-bottom: 10px;
   font-size: 12px;
+}
   width: calc(50% - 10px);
+@media (min-width: 769px) {
+  .form-item {
+    width: calc(50% - 10px);
+    margin-right: 2%;
+  }
   align-items: center;
   justify-content: center;
   width: 48%;
@@ -180,4 +187,13 @@
   justify-content: space-between;
   margin-bottom: 10px;
   box-sizing: border-box;
+
+.form-item-half {
+  width: calc(50% - 10px);
+  margin-right: 2%;
+}
+
+.form-item-half:nth-child(2n) {
+  margin-right: 0;
+}
   flex-wrap: wrap;
