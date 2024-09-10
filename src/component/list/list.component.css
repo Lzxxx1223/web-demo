@@ -1,14 +1,17 @@
 .list-container{
   width: 100%;
   height: calc(100% - 96px);
+  max-width: 1200px; /* Limit the maximum width for larger screens */
   background: #f3f3f3;
   padding:16px;
 
 }
 .form{
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   height: calc(100% - 100px);
+  justify-content: space-between; /* Space items evenly */
   overflow: auto;
-  display: block;
 }
 .list-content{
   height: 100%;
@@ -30,22 +33,24 @@
 }
 .form-item{
   display: flex;
-  margin-bottom: 10px;
-  font-size: 12px;
+  width: calc(50% - 20px); /* Adjust width for two columns */
+  margin-bottom: 16px; /* Adjust margin for better spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding-right: 10px; /* Add some padding to the right for spacing */
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .form-item-label{
-  width: 150px;
+  width: 120px; /* Adjust width to fit within the new layout */
 }
 .form-operator{
   display: flex;
   justify-content: center;
 }
 .form-item-input{
+  width: calc(100% - 130px); /* Adjust width to fit within the new layout */
   margin: 0;
   width: 300px;
-  margin-right: 20px;
   padding: 4px 11px;
   color: #555;
   font-size: 12px;
@@ -109,6 +114,33 @@
 }
 
 .abc-abc{
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column; /* Stack form items vertically on smaller screens */
+  }
+  .form-item-label {
+    width: 100px; /* Adjust label width for smaller screens */
+  }
+  .form-item-input,
+  .form-item-radio-group,
+  .form-item-checkbox-group,
+  .form-item-textarea {
+    width: 100%; /* Make inputs full width on smaller screens */
+    margin-right: 0; /* Remove right margin */
+  }
+  .form-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+  .form-operator {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+  .form-operator button {
+    width: 100%; /* Make buttons full width */
+    margin-bottom: 10px; /* Add margin between buttons */
+  }
+}
   display: flex;
   align-items: center;
 }
