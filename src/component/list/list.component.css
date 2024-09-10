@@ -6,9 +6,12 @@
 
 }
 .form{
-  height: calc(100% - 100px);
-  overflow: auto;
-  display: block;
+  grid-template-columns: 1fr 1fr; /* Display two fields in one row */
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  gap: 10px; /* Add space between items */
+  height: auto; /* Adjust height to fit content */
+  overflow: visible; /* Allow content to expand */
 }
 .list-content{
   height: 100%;
@@ -33,9 +36,11 @@
   margin-bottom: 10px;
   font-size: 12px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Align items to the start */
+  width: 100%; /* Ensure full width */
 }
 .form-item-label{
+  flex: 0 0 150px; /* Fixed width for labels */
   width: 150px;
 }
 .form-operator{
@@ -44,7 +49,9 @@
 }
 .form-item-input{
   margin: 0;
-  width: 300px;
+  flex: 1; /* Allow input elements to grow */
+  width: calc(100% - 150px); /* Adjust width to fit within the form item */
+  max-width: 300px; /* Limit maximum width */
   margin-right: 20px;
   padding: 4px 11px;
   color: #555;
@@ -57,7 +64,9 @@
 }
 .form-item-radio-group{
   margin: 0;
-  width: 300px;
+  flex: 1; /* Allow radio group to grow */
+  width: calc(100% - 150px); /* Adjust width to fit within the form item */
+  max-width: 300px; /* Limit maximum width */
   margin-right: 20px;
   padding: 4px 11px;
   color: #555;
@@ -74,7 +83,9 @@
 }
 .form-item-checkbox-group{
   margin: 0;
-  width: 300px;
+  flex: 1; /* Allow checkbox group to grow */
+  width: calc(100% - 150px); /* Adjust width to fit within the form item */
+  max-width: 300px; /* Limit maximum width */
   margin-right: 20px;
   padding: 4px 11px;
   color: #555;
@@ -95,7 +106,9 @@
 }
 .form-item-textarea{
   margin: 0;
-  width: 300px;
+  flex: 1; /* Allow textarea to grow */
+  width: calc(100% - 150px); /* Adjust width to fit within the form item */
+  max-width: 300px; /* Limit maximum width */
   margin-right: 20px;
   height: 100px;
   padding: 4px 11px;
