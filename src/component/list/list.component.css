@@ -7,8 +7,9 @@
 }
 .form{
   height: calc(100% - 100px);
+  display: flex;
+  flex-wrap: wrap;
   overflow: auto;
-  display: block;
 }
 .list-content{
   height: 100%;
@@ -32,9 +33,16 @@
   display: flex;
   margin-bottom: 10px;
   font-size: 12px;
+  font-size: 12px;
+  justify-content: flex-start;
+  width: 48%; /* Adjust width to fit two items in one row */
+  margin-right: 2%; /* Add margin to create space between items */
   align-items: center;
+.form-item:nth-child(2n) {
+  margin-right: 0; /* Remove right margin for every second item */
   justify-content: center;
 }
+  width: 120px; /* Adjust width to fit within the new layout */
 .form-item-label{
   width: 150px;
 }
@@ -42,6 +50,7 @@
   display: flex;
   justify-content: center;
 }
+  width: calc(100% - 120px); /* Adjust width to fit within the new layout */
 .form-item-input{
   margin: 0;
   width: 300px;
@@ -53,6 +62,7 @@
   background-color: white;
   background-image: none;
   border: 1px solid #ccc;
+  width: calc(100% - 120px); /* Adjust width to fit within the new layout */
   border-radius: 4px;
 }
 .form-item-radio-group{
@@ -68,6 +78,7 @@
   border-radius: 4px;
   display: flex;
   justify-content: space-around;
+  width: calc(100% - 120px); /* Adjust width to fit within the new layout */
 }
 .form-item-radio-group span{
   color: #555;
@@ -87,6 +98,7 @@
   justify-content: space-around;
 }
 .form-item-checkbox-label{
+  width: calc(100% - 120px); /* Adjust width to fit within the new layout */
   margin-left: 4px;
 }
 .form-item-checkbox{
