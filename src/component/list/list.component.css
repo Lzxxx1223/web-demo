@@ -6,6 +6,8 @@
 
 }
 .form{
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   height: calc(100% - 100px);
   overflow: auto;
   display: block;
@@ -31,6 +33,7 @@
 .form-item{
   display: flex;
   margin-bottom: 10px;
+  flex: 1 1 calc(50% - 20px); /* Each item takes up half the width minus the gap */
   font-size: 12px;
   align-items: center;
   justify-content: center;
