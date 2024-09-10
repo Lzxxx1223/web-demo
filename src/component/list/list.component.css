@@ -6,6 +6,8 @@
 
 }
 .form{
+  display: flex;
+  flex-wrap: wrap;
   height: calc(100% - 100px);
   overflow: auto;
   display: block;
@@ -29,6 +31,8 @@
   color: red;
 }
 .form-item{
+  width: 50%;
+  padding-right: 10px;
   display: flex;
   margin-bottom: 10px;
   font-size: 12px;
