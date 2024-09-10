@@ -11,6 +11,12 @@
   display: block;
 }
 .list-content{
+.form {
+  height: calc(100% - 100px);
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
   height: 100%;
   width: 100%;
   color: black;
@@ -18,8 +24,13 @@
   background: white;
 }
 .title{
+  width: 48%; /* Adjust width to fit two columns */
+  margin-right: 2%; /* Add some space between columns */
   font-size: 18px;
   font-weight: bold;
+.form-item:nth-child(2n) {
+  margin-right: 0; /* Remove right margin for even items */
+}
 }
 .divider{
   border-top: 1px solid #f3f3f3;
