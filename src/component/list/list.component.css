@@ -11,7 +11,12 @@
   display: block;
 }
 .list-content{
+  height: calc(100% - 100px);
+  display: flex;
+  flex-wrap: wrap;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   color: black;
   padding: 16px;
@@ -34,8 +39,13 @@
   font-size: 12px;
   align-items: center;
   justify-content: center;
+  width: 50%; /* Adjust width for two columns */
+  box-sizing: border-box;
+  padding: 0 10px;
 }
 .form-item-label{
+.form-item-half {
+  width: 50%; /* Adjust width for two columns */
   width: 150px;
 }
 .form-operator{
