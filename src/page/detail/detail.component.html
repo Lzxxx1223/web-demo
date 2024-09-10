@@ -1,0 +1,43 @@
+<div class="detail-container">
+  <div class="search-bar">
+    <nz-input-group nzSearch  [nzAddOnBefore]="prefixButton"	nzSize="large" [nzAddOnAfter]="suffixButton">
+      <input type="text" nz-input placeholder="input search text" />
+    </nz-input-group>
+    <ng-template #suffixButton>
+      <button nz-button nzType="primary" nzSize="large" nzSearch>Search</button>
+    </ng-template>
+    <ng-template #prefixButton>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item>Notification ID</li>
+          <li nz-menu-item>Header</li>
+          <li nz-menu-item>Creator</li>
+        </ul>
+      </nz-dropdown-menu>
+    </ng-template>
+  </div>
+  <div class="detail-form">
+    <nz-table #notification-table [nzData]="dataSet">
+      <thead>
+        <tr>
+          <th>Notification ID</th>
+          <th>Header</th>
+          <th>Subheader</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of notificationList">
+          <td>{{data.notificationId}}</td>
+          <td>{{data.header}}</td>
+          <td>{{data.subHeader}}</td>
+          <td>
+            <a>Action 一 {{data.notificationId}}</a>
+            <nz-divider nzType="vertical"></nz-divider>
+            <a>Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</div>

@@ -3,9 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from 'src/component/footer/footer.component';
-import { HeaderComponent } from 'src/component/header/header.component';
-import { ListComponent } from 'src/component/list/list.component';
+
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
@@ -18,6 +16,9 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzSelectModule } from 'ng-zorro-antd/select';
+import { FooterComponent } from 'src/component/footer/footer.component';
+import { HeaderComponent } from 'src/component/header/header.component';
+import { ListComponent } from 'src/component/list/list.component';
 
 registerLocaleData(en);
 

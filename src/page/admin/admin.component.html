@@ -1,0 +1,31 @@
+<div style="height:100%;width:100%;overflow:auto">
+  <nz-table #basicTable [nzData]="userList">
+    <thead>
+      <tr>
+        <th>phone</th>
+        <th>ip</th>
+        <th>operator</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{data.phone}}</td>
+        <td>{{data.ip}}</td>
+        
+  
+  
+        <td>
+          <button (click)="edit(data)" nz-button nzType="text">edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table></div>
+<nz-modal [(nzVisible)]="editVisible" nzTitle="Edit" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+  <ng-container *nzModalContent>
+    <div class="edit-item">
+      <span>Phone</span>
+      <input nz-input [(ngModel)]="editInfo.phone" disabled />
+    </div>
+    
+  </ng-container>
+</nz-modal>

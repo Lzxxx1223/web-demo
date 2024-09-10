@@ -1,0 +1,56 @@
+<div class="workflow-conatiner">
+  <div class="workflow-breadCrumb">
+    <nz-breadcrumb>
+      <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+      <nz-breadcrumb-item>Workflow</nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+  <div class="workflow-detail">
+    <nz-steps [nzCurrent]="1">
+      <nz-step nzTitle="Application Info"></nz-step>
+      <nz-step nzTitle="Template Type"></nz-step>
+      <nz-step nzTitle="Template"></nz-step>
+      <nz-step nzTitle="Category"></nz-step>
+      <nz-step nzTitle="Subscription"></nz-step>
+    </nz-steps>
+    <div class="workflow-detail-form">
+      <div class="workflow-detail-form-item">
+        <span class="workflow-detail-form-item-label">
+          <span class="required">*</span>
+          Application Id:
+        </span>
+        <input class="workflow-detail-form-item-input" />
+        <span class="workflow-detail-form-item-label">
+          <span class="required">*</span>
+          Application Name:
+        </span>
+        <input class="workflow-detail-form-item-input" />
+        <span class="workflow-detail-form-item-label">
+          <span class="required">*</span>
+          First Contact:
+        </span>
+        <input class="workflow-detail-form-item-input" />
+        <span class="workflow-detail-form-item-label">
+          <span class="required">*</span>
+          Second Contact:
+        </span>
+        <input class="workflow-detail-form-item-input" />
+        <span class="workflow-detail-form-item-label">
+          <span class="required">*</span>
+          Contact Group:
+        </span>
+        <input class="workflow-detail-form-item-input" />
+        <span class="workflow-detail-form-item-label">
+          <span class="required">*</span>
+          Logo:
+        </span>
+        <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzDirectory>
+          <button nz-button>
+            <span nz-icon nzType="upload"></span>
+            Upload Image
+          </button>
+        </nz-upload>
+      </div>
+    </div>
+  </div>
+</div>

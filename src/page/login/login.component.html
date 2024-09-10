@@ -1,0 +1,12 @@
+<div [style]="'width: '+containerWidth+'px;display: block;height: 100%;margin: 0 auto'">
+  <div style="width: 100%;height:32px;margin-bottom: 120px;">
+    <img [style]="'height: 32px; width:32px;margin: 0 ' +((containerWidth - 32)/2)+ 'px'" src="assets/chatgpt.svg"/>
+  </div>
+  <div class="login-part">
+    <h1 class="login-title">Welcome Back</h1>
+    <input nz-input [(ngModel)]="phone" placeholder="Phone" nzSize="large" />
+    <input nz-input [(ngModel)]="password" placeholder="Password" type="password" nzSize="large" />
+    <button style="width: 100% !important; height: 44px !important" nz-button (click)="login()" nzType="primary">Login</button>
+
+  </div>
+</div>
