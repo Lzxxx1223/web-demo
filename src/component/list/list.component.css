@@ -17,12 +17,21 @@
   padding: 16px;
   background: white;
 }
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 .title{
   font-size: 18px;
   font-weight: bold;
 }
 .divider{
   border-top: 1px solid #f3f3f3;
+  flex-direction: column;
+  width: 48%; /* Adjust width to fit two items in a row */
+  align-items: flex-start; /* Align items to the start */
+  justify-content: center;
   margin: 16px 0;
 }
 .required{
