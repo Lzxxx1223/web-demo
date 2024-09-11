@@ -108,6 +108,12 @@
   border-radius: 4px;
 }
 
+/* Additional styles for the Notes textarea, if needed */
+.form-item-textarea.notes {
+  /* Custom styles here */
+  /* Example: background-color: #e0f7fa; */
+  /* Example: background-color: #e0f7fa; */
+}
 .abc-abc{
   display: flex;
   align-items: center;
