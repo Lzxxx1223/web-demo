@@ -3,15 +3,14 @@
   height: calc(100% - 96px);
   background: #f3f3f3;
   padding:16px;
+}
 
-}
 .form{
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  height: calc(100% - 96px);
+  height: calc(100% - 100px);
   overflow: auto;
-  justify-content: space-between; /* Distribute space between items */
+  display: block;
 }
+
 .list-content{
   height: 100%;
   width: 100%;
@@ -19,35 +18,38 @@
   padding: 16px;
   background: white;
 }
+
 .title{
   font-size: 18px;
   font-weight: bold;
 }
+
 .divider{
   border-top: 1px solid #f3f3f3;
   margin: 16px 0;
 }
+
 .required{
   color: red;
 }
+
 .form-item{
   display: flex;
   margin-bottom: 10px;
-  justify-content: flex-start; /* Align items to the start */
-  width: calc(50% - 16px); /* Two items per row with some margin */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  padding-right: 20px; /* Add some padding to the right for spacing */
   font-size: 12px;
   align-items: center;
-  justify-content: flex-start; /* Align items to the start */
+  justify-content: center;
 }
+
 .form-item-label{
   width: 150px;
 }
+
 .form-operator{
   display: flex;
   justify-content: center;
 }
+
 .form-item-input{
   margin: 0;
   width: 300px;
@@ -61,6 +63,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 .form-item-radio-group{
   margin: 0;
   width: 300px;
@@ -75,9 +78,11 @@
   display: flex;
   justify-content: space-around;
 }
+
 .form-item-radio-group span{
   color: #555;
 }
+
 .form-item-checkbox-group{
   margin: 0;
   width: 300px;
@@ -92,13 +97,16 @@
   display: flex;
   justify-content: space-around;
 }
+
 .form-item-checkbox-label{
   margin-left: 4px;
 }
+
 .form-item-checkbox{
   display: flex;
   align-items: center;
 }
+
 .form-item-textarea{
   margin: 0;
   width: 300px;
@@ -114,7 +122,34 @@
   border-radius: 4px;
 }
 
-.abc-abc{
-  display: flex;
-  align-items: center;
+.reset-button {
+  margin-right: 16px;
+}
+
+@media (max-width: 768px) {
+  .form-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-item-label, .form-item-input, .form-item-radio-group, .form-item-checkbox-group, .form-item-textarea {
+    width: 100%;
+    margin-right: 0;
+  }
+  .form-operator {
+    flex-direction: column;
+  }
+  .reset-button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .form-item {
+    flex-direction: row;
+    align-items: center;
+  }
+  .form-item-label, .form-item-input, .form-item-radio-group, .form-item-checkbox-group, .form-item-textarea {
+    width: 100%;
+    max-width: 400px;
+  }
 }
