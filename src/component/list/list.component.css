@@ -122,6 +122,11 @@
   border-radius: 4px;
 }
 
+/* Optional: Specific styling for Notes textarea if needed */
+.form-item-notes-textarea {
+  /* Add any specific styles for the Notes textarea here */
+  /* Example: background-color: #e0f7fa; */
+}
 .reset-button {
   margin-right: 16px;
 }
