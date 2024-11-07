@@ -121,6 +121,12 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+/* Optional: Specific styles for the Notes textarea */
+.form-item-notes-textarea {
+  /* Add any specific styles here if needed */
+  /* Example: */
+  /* background-color: #e0f7fa; */
+}
 
 .reset-button {
   margin-right: 16px;
