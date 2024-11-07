@@ -8,8 +8,7 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .list-content{
@@ -38,12 +37,6 @@
   display: flex;
   margin-bottom: 10px;
   font-size: 12px;
-  font-size: 12px;
-  justify-content: flex-start; /* Align items to the start */
-  width: 50%; /* Each item takes up half the width */
-  justify-content: flex-start;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  padding-right: 10px; /* Adjust padding for spacing */
   align-items: center;
   justify-content: center;
 }
