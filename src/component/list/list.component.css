@@ -8,9 +8,11 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: block;
+  display: flex; /* Change from block to flex */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
+.form {
 .list-content{
   height: 100%;
   width: 100%;
@@ -41,6 +43,10 @@
   justify-content: center;
 }
 
+.form-item {
+  width: 50%; /* Each item takes up half the width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding-right: 10px; /* Add some padding to the right for spacing */
 .form-item-label{
   width: 150px;
 }
@@ -130,6 +136,7 @@
   .form-item {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%; /* Full width for smaller screens */
   }
   .form-item-label, .form-item-input, .form-item-radio-group, .form-item-checkbox-group, .form-item-textarea {
     width: 100%;
