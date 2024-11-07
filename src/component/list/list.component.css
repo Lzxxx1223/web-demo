@@ -8,8 +8,8 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: flex; /* Change from block to flex */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .list-content{
@@ -40,10 +40,10 @@
   font-size: 12px;
   font-size: 12px;
   justify-content: flex-start; /* Align items to the start */
-  padding-right: 20px; /* Add some padding to the right for spacing */
   width: 50%; /* Each item takes up half the width */
+  justify-content: flex-start;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  padding-right: 10px; /* Add some padding to the right for spacing */
+  padding-right: 10px; /* Adjust padding for spacing */
   align-items: center;
   justify-content: center;
 }
