@@ -8,7 +8,8 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: block;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .list-content{
@@ -37,8 +38,11 @@
   display: flex;
   margin-bottom: 10px;
   font-size: 12px;
+  width: calc(50% - 20px); /* Adjust width to fit two items in one row */
   align-items: center;
   justify-content: center;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 10px; /* Add padding for spacing */
 }
 
 .form-item-label{
