@@ -8,7 +8,8 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: block;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
 }
 
 .list-content{
@@ -36,16 +37,19 @@
 .form-item{
   display: flex;
   margin-bottom: 10px;
+  width: 50%; /* Each item takes up half the width of the container */
   font-size: 12px;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Align items vertically centered */
+  justify-content: flex-start; /* Align items to the start */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding-right: 20px; /* Add padding to the right for spacing */
 }
 
 .form-item-label{
   width: 150px;
 }
 
-.form-operator{
+.form-operator {
   display: flex;
   justify-content: center;
 }
@@ -54,7 +58,7 @@
   margin: 0;
   width: 300px;
   margin-right: 20px;
-  padding: 4px 11px;
+  padding: 4px 11px; /* Padding for input elements */
   color: #555;
   font-size: 12px;
   line-height: 1.5715;
@@ -128,7 +132,7 @@
 
 @media (max-width: 768px) {
   .form-item {
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: flex-start;
   }
   .form-item-label, .form-item-input, .form-item-radio-group, .form-item-checkbox-group, .form-item-textarea {
