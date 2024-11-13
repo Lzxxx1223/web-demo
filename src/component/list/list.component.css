@@ -8,7 +8,8 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: block;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .list-content{
@@ -36,6 +37,8 @@
 .form-item{
   display: flex;
   margin-bottom: 10px;
+  width: 50%; /* Each item takes up half the width of the form */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
   font-size: 12px;
   align-items: center;
   justify-content: center;
@@ -45,6 +48,7 @@
   width: 150px;
 }
 
+.form-item-input,
 .form-operator{
   display: flex;
   justify-content: center;
@@ -129,6 +133,7 @@
 @media (max-width: 768px) {
   .form-item {
     flex-direction: column;
+    width: 100%; /* Full width for smaller screens */
     align-items: flex-start;
   }
   .form-item-label, .form-item-input, .form-item-radio-group, .form-item-checkbox-group, .form-item-textarea {
