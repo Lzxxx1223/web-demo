@@ -8,9 +8,13 @@
 .form{
   height: calc(100% - 100px);
   overflow: auto;
-  display: block;
+  display: flex; /* Changed from block to flex */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
+.form {
+  display: flex; /* Changed from block to flex */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 .list-content{
   height: 100%;
   width: 100%;
@@ -35,10 +39,17 @@
 
 .form-item{
   display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: flex-start; /* Align items to the start */
+  width: 48%; /* Adjust width to fit two items per row */
+  margin-right: 4%; /* Add space between columns */
   margin-bottom: 10px;
   font-size: 12px;
   align-items: center;
   justify-content: center;
+  width: calc(50% - 20px); /* Adjust width to fit two items per row */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 10px; /* Add padding for spacing */
 }
 
 .form-item-label{
@@ -128,6 +139,7 @@
 
 @media (max-width: 768px) {
   .form-item {
+  .form-item:nth-child(2n) { margin-right: 0; } /* Remove right margin for every second item */
     flex-direction: column;
     align-items: flex-start;
   }
