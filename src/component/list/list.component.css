@@ -38,7 +38,7 @@
   margin-bottom: 10px;
   font-size: 12px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Change to space-between for two-column layout */
 }
 
 .form-item-label{
@@ -119,6 +119,14 @@
   background-color: white;
   background-image: none;
   border: 1px solid #ccc;
+
+.form-item-notes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
   border-radius: 4px;
 }
 
